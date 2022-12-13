@@ -64,54 +64,47 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
 		  
-          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()"  bgcolor="#ffffd0">
+          <tr onmouseout="sjc_stop()" onmouseover="sjc_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerf_image'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='sjc_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/vase_small.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <img src='images/vase_still.png' width="160">
               </div>
               <script type="text/javascript">
-                function nerf_start() {
-                  document.getElementById('nerf_image').style.opacity = "1";
+                function sjc_start() {
+                  document.getElementById('sjc_image').style.opacity = "1";
                 }
 
-                function nerf_stop() {
-                  document.getElementById('nerf_image').style.opacity = "0";
+                function sjc_stop() {
+                  document.getElementById('sjc_image').style.opacity = "0";
                 }
-                nerf_stop()
+                sjc_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://www.matthewtancik.com/nerf">
-                <papertitle>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</papertitle>
+              <a href="https://pals.ttic.edu/p/score-jacobian-chaining">
+                <papertitle>Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation</papertitle>
               </a>
               <br>
-              <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan*</a>,
-              <a href="http://matthewtancik.com/">Matthew Tancik*</a>, <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
+              <a href="https://whc.is/">Haochen Wang*</a>,
+              <a href="https://github.com/duxiaodan">Xiaodan Du*</a>,
+              <strong>Jiahao Li*</strong>,
+              <a href="https://raymondyeh07.github.io/">Raymond A. Yeh</a>,
+              <a href="https://home.ttic.edu/~gregory/">Greg Shakhnarovich</a>,
+              <!-- <br> -->
+              <!-- <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention, CACM Research Highlight)</strong></font> -->
               <br>
-              <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention, CACM Research Highlight)</strong></font>
-              <br>
-              <a href="http://www.matthewtancik.com/nerf">project page</a>
+              <a href="https://pals.ttic.edu/p/score-jacobian-chaining">project page</a>
               /
-              <a href="https://arxiv.org/abs/2003.08934">arXiv</a>
+              <a href="https://arxiv.org/abs/2212.00774">arXiv</a>
               /
-              <a href="https://www.youtube.com/watch?v=LRAqeM8EjOo&t">talk video</a>
-              /
-              <a href="https://www.youtube.com/watch?v=JuH79E8rdKc">supp video</a>
-              /
-              <a href="https://github.com/bmild/nerf">code</a>
-              /
-              <a href="https://cacm.acm.org/magazines/2022/1/257450-nerf/fulltext">CACM</a> <a href="https://cacm.acm.org/magazines/2022/1/257453-technical-perspective-neural-radiance-fields-explode-on-the-scene/fulltext">(foreward)</a>
+              <a href="https://github.com/pals-ttic/sjc/">code</a>
               <p></p>
               <p>
-              Training a tiny non-convolutional neural network to reproduce a scene using volume rendering achieves photorealistic view synthesis.</p>
+              Generating 3D objects from 2D diffusion models by chaining scores with NeRF gradients.</p>
             </td>
           </tr> 
 
@@ -119,19 +112,20 @@
           <tr onmouseout="adaptclip_stop()" onmouseover="adaptclip_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='adaptclip_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/adaptclip_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/adaptclip_before.jpg' width="160">
+                <div class="two" id='adaptclip_image_before'>
+                  <img src='images/adaptclip_before.png' width="160">
+                </div>
+                <div class="two" id='adaptclip_image_after'>
+                  <img src='images/adaptclip_after.png' width="160">
+                </div>
               </div>
               <script type="text/javascript">
                 function adaptclip_start() {
-                  document.getElementById('adaptclip_image').style.opacity = "1";
+                  document.getElementById('adaptclip_image_after').style.opacity = "1";
                 }
 
                 function adaptclip_stop() {
-                  document.getElementById('adaptclip_image').style.opacity = "0";
+                  document.getElementById('adaptclip_image_after').style.opacity = "0";
                 }
                 adaptclip_stop()
               </script>
