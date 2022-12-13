@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Jiahao Li</title>
+  
+  <meta name="author" content="Jiahao Li">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Jiahao Li</name>
+              </p>
+              <p>I am a PhD student at <a href="https://www.ttic.edu/">TTI-Chicago</a> advised by <a href="https://home.ttic.edu/~gregory/">Greg Shakhnarovich</a> (lab <a href="https://pals.ttic.edu/">website</a>). I primarily work on 3D computer vision and generative modelling. 
+              </p>
+              <p>Before coming to TTIC, I received my Master of Computer Science from <a href="https://cse.wustl.edu/index.html">Washington University in St. Louis</a>, advised by <a href="https://projects.ayanc.org/">Ayan Chakrabarti</a>. I got my Bachelor of Mathematics from <a href="https://www.sysu.edu.cn/sysuen/">Sun Yat-sen University</a>. I have interned at <a href="https://tech.facebook.com/reality-labs/">Meta Reality Labs</a> and <a href="https://en.megvii.com/"Megvii</a>.
+              </p>
+              <!-- <p> -->
+              <!--   At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. -->
+              <!-- </p> -->
+              <p style="text-align:center">
+                <a href="mailto:jiahao@ttic.edu">Email</a> &nbsp/&nbsp
+                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
+                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=w9jtLkIAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp -->
+                <a href="https://github.com/jiahaoli95">Github</a>
+                <a href="https://www.linkedin.com/in/jiahaoli95/">LinkedIn</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/avatar.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/avatar.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
+        <!--     <tr> -->
+        <!--     <td style="padding:20px;width:100%;vertical-align:middle"> -->
+        <!--       <heading>Research</heading> -->
+        <!--       <p> -->
+        <!--         I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>. -->
+        <!--       </p> -->
+        <!--     </td> -->
+        <!--   </tr> -->
+        <!-- </tbody></table> -->
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
+				
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+				
+		  
+          <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/blocknerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/blocknerf_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function blocknerf_start() {
+                  document.getElementById('blocknerf_image').style.opacity = "1";
+                }
+
+                function blocknerf_stop() {
+                  document.getElementById('blocknerf_image').style.opacity = "0";
+                }
+                blocknerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://waymo.com/research/block-nerf/">
+                <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              <a href="http://casser.io/">Vincent Casser</a>,
+              <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
+              <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>, <br>
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+							<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www.henrikkretzschmar.com/">Henrik Kretzschmar</a>
+              <br>
+        <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://waymo.com/research/block-nerf/">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
+              <p></p>
+              <p>We can do city-scale reconstruction by training multiple NeRFs with millions of images.</p>
+            </td>
+          </tr>
+					
+    
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/vase_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/vase_still.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://www.matthewtancik.com/nerf">
+                <papertitle>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan*</a>,
+              <a href="http://matthewtancik.com/">Matthew Tancik*</a>, <br>
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
+              <br>
+              <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention, CACM Research Highlight)</strong></font>
+              <br>
+              <a href="http://www.matthewtancik.com/nerf">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2003.08934">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=LRAqeM8EjOo&t">talk video</a>
+              /
+              <a href="https://www.youtube.com/watch?v=JuH79E8rdKc">supp video</a>
+              /
+              <a href="https://github.com/bmild/nerf">code</a>
+              /
+              <a href="https://cacm.acm.org/magazines/2022/1/257450-nerf/fulltext">CACM</a> <a href="https://cacm.acm.org/magazines/2022/1/257453-technical-perspective-neural-radiance-fields-explode-on-the-scene/fulltext">(foreward)</a>
+              <p></p>
+              <p>
+              Training a tiny non-convolutional neural network to reproduce a scene using volume rendering achieves photorealistic view synthesis.</p>
+            </td>
+          </tr> 
+
+
+          <tr onmouseout="rgbd_stop()" onmouseover="rgbd_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='rgbd_anim' class='hidden'><img src="images/SceneSIRFS.gif"></div>
+              <div id='rgbd_still'><img src="images/SceneSIRFS-still.jpg"></div>
+              <script type="text/javascript">
+                function rgbd_start() {
+                  document.getElementById('rgbd_anim').style.display = 'inline';
+                  document.getElementById('rgbd_still').style.display = 'none';
+                }
+
+                function rgbd_stop() {
+                  document.getElementById('rgbd_anim').style.display = 'none';
+                  document.getElementById('rgbd_still').style.display = 'inline';
+                }
+                rgbd_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://drive.google.com/file/d/1snypSLhzC0jXCchJRsWpcDZ7Es5hDmXo/view?usp=sharing">
+                <papertitle>Intrinsic Scene Properties from a Single RGB-D Image</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
+              <br>
+              <em>CVPR</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://drive.google.com/file/d/1cLUw72WpgdZ_3TQAjJABdgywqjBfn_Mq/view?usp=sharing">supplement</a> / <a href="data/BarronMalikCVPR2013.bib">bibtex</a> / <a href="http://techtalks.tv/talks/intrinsic-scene-properties-from-a-single-rgb-d-image/58614/">talk</a> / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmWW1CZGJPbi12R0k/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/file/d/19q3EFf6GIb4UFcCN2DVU2jVKpxRj5kxf/view?usp=sharing">powerpoint</a>, <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmMzQ4ZVp1SWdnVkk/view?usp=sharing">PDF</a>) / <a href="https://drive.google.com/open?id=1ZbPScVA6Efqd-ESvojl92sw8K-82Xxry">code &amp; data</a>
+              <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
+                <br>
+                <br>TPAMI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
+              </p>
+            </td>
+          </tr>
+
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Website template stolen from <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
