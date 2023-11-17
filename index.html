@@ -24,9 +24,6 @@
               </p>
               <p>Before coming to TTIC, I received my Master of Computer Science from <a href="https://cse.wustl.edu/index.html">Washington University in St. Louis</a>, advised by <a href="https://projects.ayanc.org/">Ayan Chakrabarti</a>. I got my Bachelor of Mathematics from <a href="https://www.sysu.edu.cn/sysuen/">Sun Yat-sen University</a>. I have interned at <a href="https://research.adobe.com/">Adobe Resarch</a>, <a href="https://tech.facebook.com/reality-labs/">Meta Reality Labs</a> and <a href="https://en.megvii.com/">Megvii</a>.
               </p>
-              <!-- <p> -->
-              <!--   At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. -->
-              <!-- </p> -->
               <p style="text-align:center">
                 <a href="mailto:jiahao@ttic.edu">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
@@ -42,49 +39,70 @@
             </td>
           </tr>
         </tbody></table>
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
-        <!--     <tr> -->
-        <!--     <td style="padding:20px;width:100%;vertical-align:middle"> -->
-        <!--       <heading>Research</heading> -->
-        <!--       <p> -->
-        <!--         I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>. -->
-        <!--       </p> -->
-        <!--     </td> -->
-        <!--   </tr> -->
-        <!-- </tbody></table> -->
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
 				
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
+	      <br><br>
+	      <i>For ease of maintenance, only the <font color="red"><strong>most representative</strong></font> works are shown here. See my <a href="https://scholar.google.com/citations?user=w9jtLkIAAAAJ">Google Scholar</a> page for a full list of publications.</i>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-				
-		  
-          <tr onmouseout="sjc_stop()" onmouseover="sjc_start()"  bgcolor="#ffffd0">
+
+
+	  <!-- instant3d -->
+	  <!-- <tr  bgcolor="#ffffd0"> -->
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='sjc_image_before'>
-                  <img src='images/sjc_before.png' width="160">
-                </div>
-                <div class="two" id='sjc_video_after'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/sjc_after.mp4" type="video/mp4">
+                <div class="two" id='sjc_video'><video  width=100% height=100% muted autoplay loop>
+                <source src="videos/instant3d.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
               </div>
-              <script type="text/javascript">
-                function sjc_start() {
-                  document.getElementById('sjc_video_after').style.opacity = "1";
-                }
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://jiahao.ai/instant3d/">
+                <papertitle>Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction Model</papertitle>
+              </a>
+              <br>
+              <strong>Jiahao Li</strong>,
+              <a href="https://www.cs.unc.edu/~airsplay/">Hao Tan</a>,
+              <a href="https://kai-46.github.io/website/">Kai Zhang</a>,
+              <a href="https://zexiangxu.github.io/">Zexiang Xu</a>,
+              <a href="https://luanfujun.com/">Fujun Luan</a>,
+              <a href="https://justimyhxu.github.io/">Yinghao Xu</a>,
+              <a href="https://yiconghong.me/">Yicong Hong</a>,
+              <a href="http://www.kalyans.org/">Kalyan Sunkavalli</a>,
+              <a href="https://home.ttic.edu/~gregory/">Greg Shakhnarovich</a>,
+              <a href="https://sai-bi.github.io/">Sai Bi</a>,
+              <!-- <br> -->
+              <!-- <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention, CACM Research Highlight)</strong></font> -->
+              <br>
+              <a href="https://jiahao.ai/instant3d/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2311.06214">arXiv</a>
+              <br>
+              <strong>Arxiv</strong>
+              <p></p>
+              <p>
+	      High quality, diverse and Janus-free Text-to-3D in <strong>20 SECONDS</strong>.
+            </td>
+          </tr> 
 
-                function sjc_stop() {
-                  document.getElementById('sjc_video_after').style.opacity = "0";
-                }
-                sjc_stop()
-              </script>
+
+	  <!-- sjc -->
+	  <!-- <tr  bgcolor="#ffffd0"> -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sjc_video'><video  width=100% height=100% muted autoplay loop>
+                <source src="videos/sjc.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://pals.ttic.edu/p/score-jacobian-chaining">
@@ -111,92 +129,6 @@
               Generating 3D objects from 2D diffusion models by chaining scores with NeRF gradients.</p>
             </td>
           </tr> 
-
-
-          <tr onmouseout="adaptclip_stop()" onmouseover="adaptclip_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='adaptclip_image_before'>
-                  <img src='images/adaptclip_before.png' width="160">
-                </div>
-                <div class="two" id='adaptclip_image_after'>
-                  <img src='images/adaptclip_after.png' width="160">
-                </div>
-              </div>
-              <script type="text/javascript">
-                function adaptclip_start() {
-                  document.getElementById('adaptclip_image_after').style.opacity = "1";
-                }
-
-                function adaptclip_stop() {
-                  document.getElementById('adaptclip_image_after').style.opacity = "0";
-                }
-                adaptclip_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="https://arxiv.org/abs/2204.03647">
-                <papertitle>Adapting CLIP For Phrase Localization Without Further Training</papertitle>
-              </a>
-              <br>
-              <strong>Jiahao Li</strong>,
-              <a href="https://home.ttic.edu/~gregory/">Greg Shakhnarovich</a>,
-              <a href="https://raymond-yeh.com/">Raymond A. Yeh</a>
-              <br>
-              <a href="https://arxiv.org/abs/2204.03647">arXiv</a>
-              /
-              <a href="https://github.com/pals-ttic/adapting-CLIP">code</a>
-              <p></p>
-              <p>We do phrase localization by exploiting the ViT architecture of CLIP without extra training.</p>
-            </td>
-          </tr>
-					
-    
-          <tr onmouseout="idam_stop()" onmouseover="idam_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='idam_image_before'>
-                  <img src='images/idam_before.png' width="160">
-                </div>
-                <div class="two" id='idam_image_after'>
-                  <img src='images/idam_after.png' width="160">
-                </div>
-              </div>
-              <script type="text/javascript">
-                function idam_start() {
-                  document.getElementById('idam_image_before').style.opacity = "0";
-                  document.getElementById('idam_image_after').style.opacity = "1";
-                }
-
-                function idam_stop() {
-                  document.getElementById('idam_image_before').style.opacity = "1";
-                  document.getElementById('idam_image_after').style.opacity = "0";
-                }
-                idam_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1910.10328">
-                <papertitle>Iterative Distance-Aware Similarity Matrix Convolution with Mutual-Supervised Point Elimination for Efficient Point Cloud Registration</papertitle>
-              </a>
-              <br>
-              <strong>Jiahao Li</strong>,
-              Changhao Zhang, 
-              Ziyao Xu,
-              Hangning Zhou,
-              Chi Zhang
-              <br>
-              <a href="https://arxiv.org/abs/1910.10328">arXiv</a>
-              /
-              <a href="https://github.com/jiahaoli95/idam">code</a>
-              <br>
-              <strong>ECCV 2020</strong>
-              <p></p>
-              <p>
-              A deep learning based point cloud registration pipeline.
-              </p>
-            </td>
-          </tr>
 
 
         </tbody></table>
