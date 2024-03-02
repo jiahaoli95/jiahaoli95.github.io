@@ -133,6 +133,7 @@ a:hover {
 
 .intro-text {
   padding-bottom: 20px;
+  line-height: 1.3em;
 }
 
 .intro-text-avatar {
@@ -273,14 +274,24 @@ a:hover {
 
 /* Style for the blog post markdown */
 
+div.single-content {
+  line-height: 1.5em;
+}
+
 p {
   margin-top: 1em;
   /* margin-bottom: 1em; */
 }
 
+/* unordered list */
 ul {
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-left: 2em;
+}
+
+/* ordered list */
+ol {
+  margin-top: 0.5em;
   margin-left: 2em;
 }
 
