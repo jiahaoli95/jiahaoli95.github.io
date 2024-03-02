@@ -18,11 +18,20 @@
 body {
   background-color: var(--bgLight);
   color: var(--textLight);
-  font-size: 16px;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
+
+  /* ubuntu font */
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  /* ubuntu font */
+
+  /* lora font */
+  /* font-size: 16px; */
+  /* font-family: "Lora", serif; */
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  /* lora font */
 }
 
 a:link {
@@ -261,6 +270,21 @@ a:hover {
 /*     max-width: 1024px; */
 /*   } */
 /* } */
+
+/* Style for the blog post markdown */
+
+p {
+  margin-top: 1em;
+  /* margin-bottom: 1em; */
+}
+
+ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+}
+
+/* Style for the blog post markdown */
 
 @media (max-width: 1024px) {
   .container {
