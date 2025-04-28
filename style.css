@@ -1,10 +1,13 @@
 :root {
-  --bgLight: #EBDBB2;
+  /* --bgLight: #EBDBB2; */
+  --bgLight: #FFFFFF;
   --bgDark: #282828;
   --textLight: #282828;
   --textDark: #EBDBB2;
-  --linkColorLight: #458588;
-  --linkColorHoverLight: #83A598;
+  /* --linkColorLight: #458588; */
+  /* --linkColorHoverLight: #83A598; */
+  --linkColorLight: #376d70;
+  --linkColorHoverLight: #6a8890;
   --linkColorDark: #83A598;
   --linkColorHoverDark: #458588;
 }
@@ -73,48 +76,6 @@ a:hover {
   padding-bottom: 20px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.navbar-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.navbar-item-icon img{
-  height: 1.8rem;
-}
-
-.navbar-item-text {
-  align-items: center;
-  font-size: 2.0rem;
-}
-
-.navbar-item-text a:link {
-  color: var(--textLight);
-  text-decoration: none;
-}
-
-.navbar-item-text a:visited {
-  color: var(--textLight);
-  text-decoration: none;
-}
-
-.navbar-item-text a:active {
-  color: var(--textLight);
-  text-decoration: none;
-}
-
-.navbar-item-text a:hover {
-  color: var(--textLight);
-  text-decoration: underline;
-}
-
 .header-hr-bar {
   border: 1px solid var(--textLight);
   /* margin-top: 1.0rem; */
@@ -160,7 +121,7 @@ a:hover {
   margin-left: 3.0rem;
   height: 10rem;
   border-radius: 50%;
-  border: 5px solid var(--bgDark);
+  border: 3px solid var(--bgDark);
 }
 
 .research-header {
@@ -184,7 +145,7 @@ a:hover {
 .research-item-preview video{
   width: 10rem;
   border-radius: 5%;
-  border: 3px solid var(--bgDark);
+  border: 2px solid var(--bgDark);
 }
 
 .research-item-text{
