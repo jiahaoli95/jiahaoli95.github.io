@@ -4,7 +4,7 @@
     <title>Jiahao Li</title>
     <link>https://jiahao.ai/</link>
     <description>Recent content on Jiahao Li</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Feb 2024 22:15:03 -0600</lastBuildDate>
     <atom:link href="https://jiahao.ai/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,7 @@
       <link>https://jiahao.ai/test-post/</link>
       <pubDate>Wed, 14 Feb 2024 15:01:35 -0600</pubDate>
       <guid>https://jiahao.ai/test-post/</guid>
-      <description>testing post</description>
+      <description>&lt;p&gt;testing post&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
