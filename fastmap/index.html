@@ -55,7 +55,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title"> 
-            <span class="dnerf">FastMap: Revisiting Dense and Scalable Structure from Motion</span>
+            <span class="dnerf">FastMap: Revisiting Structure from Motion through First-Order Optimization</span>
           </h1>
 
           <div class="is-size-5 publication-authors">
@@ -134,11 +134,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p style="color: gray;">
-            <b>NOTE</b>: <i>We recently tested the newly added GPU support in GLOMAP. Paired with powerful CPUs, it runs much faster than the pure CPU version, and the speed gap between FastMap and GLOMAP is smaller than reported in the current version of the paper. We are trying to get more detailed timing results on different hardware configurations and will report them soon.</i><br>
-          </p>
+          <!-- <p style="color: gray;"> -->
+          <!--   <b>NOTE</b>: <i>We recently tested the newly added GPU support in GLOMAP. Paired with powerful CPUs, it runs much faster than the pure CPU version, and the speed gap between FastMap and GLOMAP is smaller than reported in the current version of the paper. We are trying to get more detailed timing results on different hardware configurations and will report them soon.</i><br> -->
+          <!-- </p> -->
           <p>
-            We propose <strong>FastMap</strong>, a new global structure from motion method focused on speed and simplicity. Previous methods like COLMAP and GLOMAP are able to estimate high-precision camera poses, but suffer from poor scalability when the number of matched keypoint pairs becomes large. We identify two key factors leading to this problem: poor parallelization and computationally expensive optimization steps. To overcome these issues, we design an SfM framework that relies entirely on GPU-friendly operations, making it easily parallelizable. Moreover, each optimization step runs in time linear to the number of image pairs, independent of keypoint pairs or 3D points. Through extensive experiments, we show that <strong>FastMap</strong> is one to two orders of magnitude faster than COLMAP and GLOMAP on large-scale scenes with comparable pose accuracy.
+            We propose <strong>FastMap</strong>, a new global structure from motion method focused on speed and simplicity. Previous methods like COLMAP and GLOMAP are able to estimate high-precision camera poses, but suffer from poor scalability when the number of matched keypoint pairs becomes large, mainly due to the time-consuming process of second-order Gauss-Newton optimization. Instead, we design our method solely based on first-order optimizers. To obtain maximal speedup, we identify and eliminate two key performance bottlenecks: computational complexity and the kernel implementation of each optimization step. Through extensive experiments, we show that FastMap is up to 10 times faster than COLMAP and GLOMAP with GPU acceleration and achieves comparable pose accuracy.
             <br><br>
           </p>
     <img src="./static/images/diagram.png" alt="diagram">
@@ -302,14 +302,14 @@
     <pre><code>
 @article{2505.04612v1,
     Author        = {Jiahao Li and Haochen Wang and Muhammad Zubair Irshad and Igor Vasiljevic and Matthew R. Walter and Vitor Campagnolo Guizilini and Greg Shakhnarovich},
-    Title         = {FastMap: Revisiting Dense and Scalable Structure from Motion},
-    Eprint        = {2505.04612v1},
+    Title         = {FastMap: Revisiting Structure from Motion through First-Order Optimization},
+    Eprint        = {2505.04612v3},
     ArchivePrefix = {arXiv},
     PrimaryClass  = {cs.CV},
     Year          = {2025},
     Month         = {May},
-    Url           = {http://arxiv.org/abs/2505.04612v1},
-    File          = {2505.04612v1.pdf}
+    Url           = {http://arxiv.org/abs/2505.04612},
+    File          = {2505.04612v3.pdf}
 }
     </code></pre>
   </div>
